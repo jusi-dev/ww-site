@@ -1,9 +1,8 @@
 import { gsap } from "gsap-trial";
     
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 
-gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
 
 gsap.to("#rocket", {
@@ -24,6 +23,8 @@ gsap.to("#rocket", {
   }
 });
 
+// ##### Projects #####
+
 gsap.to('#project4', {
   x: '100vw',
   rotate: 35,
@@ -41,8 +42,8 @@ gsap.to('#project3', {
   rotate: -35,
   scrollTrigger: {
     trigger: '#projectContainer',
-    start: 'top -300vh',
-    end: 'top -600vh',
+    start: 'top -350vh',
+    end: 'top -650vh',
     scrub: 1,
     markers: true
   }
@@ -53,8 +54,8 @@ gsap.to('#project2', {
   rotate: 35,
   scrollTrigger: {
     trigger: '#projectContainer',
-    start: 'top -600vh',
-    end: 'top -900vh',
+    start: 'top -700vh',
+    end: 'top -1000vh',
     scrub: 1,
     markers: true
   }
@@ -65,12 +66,14 @@ gsap.to('#project1', {
   rotate: -35,
   scrollTrigger: {
     trigger: '#projectContainer',
-    start: 'top -900vh',
-    end: 'top -1200vh',
+    start: 'top -1050vh',
+    end: 'top -1250vh',
     scrub: 1,
     markers: true
   }
 });
+
+// ##### SERVICE #####
 
 gsap.to('#service1', {
   x: '0vw',
@@ -107,3 +110,54 @@ gsap.to('#service3', {
     markers: true
   }
 });
+
+// ##### ABOUT #####
+
+gsap.to('#about3', {
+  y: '100vw',
+  scrollTrigger: {
+    trigger: '#aboutContainer',
+    start: 'top -350vh',
+    end: 'top -650vh',
+    scrub: 1,
+    markers: true
+  }
+});
+
+gsap.to('#about2', {
+  y: '100vw',
+  scrollTrigger: {
+    trigger: '#aboutContainer',
+    start: 'top -700vh',
+    end: 'top -1000vh',
+    scrub: 1,
+    markers: true
+  }
+});
+
+gsap.to('#about1', {
+  y: '100vw',
+  scrollTrigger: {
+    trigger: '#aboutContainer',
+    start: 'top -1050vh',
+    end: 'top -1250vh',
+    scrub: 1,
+    markers: true
+  }
+});
+
+// ##### TIMELINE #####
+
+gsap.to('#timelineBar', {
+  scaleY: '95%',
+  scrollTrigger: {
+    trigger: '#timelineContainer',
+    start: 'top 40%',
+    end: 'bottom 50%',
+    scrub: 1,
+    markers: {
+      startColor: 'purple',
+      endColor: 'lightblue'
+    }
+  }
+})

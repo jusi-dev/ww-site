@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./src/input.css">
+
+        <!-- <script src="./scripts/motion2.js" type="module"></script> -->
+    </head>
+    <body>
+        <div id="smooth-wrapper">
+        <div id="smooth-content">
+        <nav id="header" class="fixed w-full z-30 top-0 text-purple-600 ease-in-out">
+            <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+              <div class="pl-4 flex items-center">
+                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+                  <img class="w-12 m-2" src="./img/logo22.png" alt="logo" id="logo-white" />
+                </a>
+              </div>
+              <div class="block lg:hidden pr-4">
+                <button id="nav-toggle" class="flex items-center p-1 text-white focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  <svg class="fill-current h-6 w-6 rounded-lg" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                  <li class="mr-3">
+                    <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
+                  </li>
+                  <li class="mr-3">
+                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+                  </li>
+                  <li class="mr-3">
+                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+                  </li>
+                </ul>
+                <button
+                  id="navAction"
+                  class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                >
+                  Termin buchen
+                </button>
+              </div>
+            </div>
+            <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+          </nav>
+        <main>
+            <section class="flex flex-col lg:flex-row h-[100vh] bg-gradient-to-b from-[#3F018D] to-[#0E0717] px-[7vw] overflow-hidden lg:h-[100vh]" id="heroSection">
+              <div class="lg:justify-center lg:items-center flex flex-col lg:flex-row">
+                <div>
+                  <div class="mt-[13vh] order-1">
+                      <div>
+                          <h1 class="uppercase text-3xl text-center font-bold 
+                                  text-transparent bg-clip-text bg-gradient-to-r from-[#FFF] to-[#7100FF] z-10"
+                              id="heroHeader">
+                                  Webdesign welches sich von der <br/>Masse abhebt
+                          </h1>
+                          <p id="heroText" class="text-center text-white font-bold mt-4 z-10">Wir erstellen Websites, welche Ihr Unternehmen auf die nächste Stufe hebt</p>
+                      </div>
+                  </div>
+                  <div class="mx-auto mt-4 order-3 lg:order-2 flex justify-center pt-8 pb-6">
+                      <button class="text-white font-semibold 
+                                      bg-gradient-to-b from-[#7100FF] to-[#A15CF8]
+                                      rounded-xl py-4 px-4 text-xl drop-shadow-[0_0px_20px_rgba(255,255,255,0.6)]">
+                          Auf zur neuen Website
+                      </button>
+                  </div>
+                </div>
+                <div class="flex flex-col items-center mt-4 order-2 lg:order-3">
+                  <img class="w-[90%] will-change-transform" src="./img/hero.png" alt="" id="heroImg">
+                </div>
+                <div class="relative left-[-40vw] rotate-[30deg] z-0 order-4" id="rocket">
+                    <img class="w-24 will-change-rotate-transform" src="./img/rakete.png" alt="">
+                </div>
+              </div>
+            </section>
+            <section class="bg-gradient-to-b from-[#0E0717] to-[#430085]" id="projectSection">
+              <div class="pt-10">
+                <div>
+                  <div class=" h-[300vh] z-20" id="projectContainer">
+                    <div class="flex flex-col sticky top-0 h-[100vh] w-[100vw] overflow-x-hidden">
+                      <h3 class="text-white font-bold text-4xl text-center drop-shadow-[0_0px_20px_#8626FF] mt-32">Unsere bisherigen Projekte</h3>
+                      <div class="mx-auto">
+                        <div class="flex flex-col justify-center items-center mt-[15vh] mx-10 h-[20vh] lg:w-[50vh] z-50 drop-shadow-[0_0px_20px_rgba(255,255,255,0.6)] will-change-rotate-transform" id="project1">
+                          <img class="w-full h-auto rounded-xl" src="./img/fundflow-mockup.png" alt="">
+                        </div>
+                        <div class="flex flex-col justify-center items-center -mt-[15vh] mx-10 h-[20vh] lg:w-[50vh] z-40 drop-shadow-[0_0px_20px_rgba(255,255,255,0.6)] will-change-rotate-transform" id="project2">
+                          <img class="w-full h-auto rounded-xl" src="./img/fundflow-mockup.png" alt="">
+                        </div>
+                        <div class="flex flex-col justify-center items-center -mt-[15vh] mx-10 h-[20vh] lg:w-[50vh] z-30 drop-shadow-[0_0px_20px_rgba(255,255,255,0.6)] will-change-rotate-transform" id="project3">
+                          <img class="w-full h-auto rounded-xl" src="./img/fundflow-mockup.png" alt="">
+                        </div>
+                        <div class="flex flex-col justify-center items-center -mt-[15vh] mx-10 h-[20vh] lg:w-[50vh] z-20 drop-shadow-[0_0px_20px_rgba(255,255,255,0.6)] will-change-rotate-transform" id="project4">
+                          <img class="w-full h-auto rounded-xl" src="./img/fundflow-mockup.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="bg-gradient-to-b from-[#430085] to-[#6200C4] overflow-x-hidden" id="serviceSection">
+              <div class="pt-10 mx-4">
+                <div>
+                  <div class="z-20" id="serviceContainer">
+                    <div>
+                      <h3 class="text-white font-bold text-4xl text-center drop-shadow-[0_0px_20px_#8626FF] mt-28">Wie wir Ihre Website auf hochglanz bringen</h3>
+                    </div>
+                    <div class="p-8 mt-10">
+                      <div class="flex flex-col mt-12 items-center bg-gradient-to-r translate-x-[-100vw] from-[#5802C4] to-[#32066A] text-white text-center p-3 rounded-3xl drop-shadow-[0_0px_20px_#7304FF] will-change-transform" id="service1">
+                        <img class="w-[50%] -mt-[25%]" src="./img/webdesign-icon.png" alt="webdesign-icon">
+                        <h3 class="mt-4 font-bold text-3xl">Webdesign</h3>
+                        <p class="mt-6 text-lg font-extralight">
+                          Mit unserem Webdesign haben Sie ein garantieres Alleinstellungsmerkmal. Anders als andere Webdesign Unternehmen, verwenden wir keine typischen Vorlagen. 
+                          <br>100% designed with love.
+                        </p>
+                        <ul class="list-disc list-inside mt-4">
+                          <li>Responsive Design</li>
+                          <li>Benutzerfreundlichkeit</li>
+                          <li>Hauseigenes L-CMS</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col mt-32 items-center bg-gradient-to-r translate-x-[100vw] from-[#5802C4] to-[#32066A] text-white text-center p-3 rounded-3xl drop-shadow-[0_0px_20px_#7304FF] will-change-transform" id="service2">
+                        <img class="w-[50%] -mt-[25%]" src="./img/webdesign-icon.png" alt="webdesign-icon">
+                        <h3 class="mt-4 font-bold text-3xl">Webdesign</h3>
+                        <p class="mt-6 text-lg font-extralight">
+                          Mit unserem Webdesign haben Sie ein garantieres Alleinstellungsmerkmal. Anders als andere Webdesign Unternehmen, verwenden wir keine typischen Vorlagen. 
+                          <br>100% designed with love.
+                        </p>
+                        <ul class="list-disc list-inside mt-4">
+                          <li>Responsive Design</li>
+                          <li>Benutzerfreundlichkeit</li>
+                          <li>Hauseigenes L-CMS</li>
+                        </ul>
+                      </div>
+                      <div class="flex flex-col mt-32 items-center bg-gradient-to-r translate-x-[-100vw] from-[#5802C4] to-[#32066A] text-white text-center p-3 rounded-3xl drop-shadow-[0_0px_20px_#7304FF] will-change-transform" id="service3">
+                        <img class="w-[50%] -mt-[25%]" src="./img/webdesign-icon.png" alt="webdesign-icon">
+                        <h3 class="mt-4 font-bold text-3xl">Webdesign</h3>
+                        <p class="mt-6 text-lg font-extralight">
+                          Mit unserem Webdesign haben Sie ein garantieres Alleinstellungsmerkmal. Anders als andere Webdesign Unternehmen, verwenden wir keine typischen Vorlagen. 
+                          <br>100% designed with love.
+                        </p>
+                        <ul class="list-disc list-inside mt-4">
+                          <li>Responsive Design</li>
+                          <li>Benutzerfreundlichkeit</li>
+                          <li>Hauseigenes L-CMS</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="bg-gradient-to-b from-[#6200C4] to-[#250052]" id="aboutSection">
+              <div class="pt-10">
+                <div>
+                  <div class=" h-[300vh] z-20" id="aboutContainer">
+                    <div class="flex flex-col w-[100vw] h-[100vh] overflow-x-hidden sticky top-0 overflow-y-hidden">
+                      <h3 class="text-white font-bold text-4xl text-left drop-shadow-[0_0px_20px_#FFFFFF] mt-32 mx-10">Wer sind wir <br/>eigentlich?</h3>
+                      <div class="flex flex-col absolute bottom-0 bg-gradient-to-bl 
+                                from-[#7517EB] to-black drop-shadow-[0_0px_10px_#FFFFFF] h-[65vh] z-10 rounded-t-3xl p-8 will-change-transform"
+                          id="about1"
+                      >
+                        <h2 class="text-center text-white text-3xl font-semibold">Solothurn</h2>
+                        <p class="text-center text-white mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat reiciendis expedita itaque perspiciatis ipsum quos nisi nesciunt et reprehenderit architecto officia veritatis exercitationem dicta totam alias, culpa cum hic at!</p>
+                      </div>
+                      <div class="flex flex-col absolute bottom-0 bg-gradient-to-bl 
+                                from-[#7517EB] to-black drop-shadow-[0_0px_10px_#FFFFFF] h-[65vh] z-20 rounded-t-3xl p-8 will-change-transform"
+                          id="about2"
+                      >
+                        <h2 class="text-center text-white text-3xl font-semibold">Unser Ziel</h2>
+                        <p class="text-center text-white mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat reiciendis expedita itaque perspiciatis ipsum quos nisi nesciunt et reprehenderit architecto officia veritatis exercitationem dicta totam alias, culpa cum hic at!</p>
+                      </div>
+                      <div class="flex flex-col absolute bottom-0 bg-gradient-to-bl 
+                                from-[#7517EB] to-black drop-shadow-[0_0px_10px_#FFFFFF] h-[65vh] z-30 rounded-t-3xl p-8 will-change-transform"
+                          id="about3"
+                      >
+                        <h2 class="text-center text-white text-3xl font-semibold">Justin Winistörfer</h2>
+                        <p class="text-center text-white mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat reiciendis expedita itaque perspiciatis ipsum quos nisi nesciunt et reprehenderit architecto officia veritatis exercitationem dicta totam alias, culpa cum hic at!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="bg-gradient-to-b from-[#250052] to-[#17012C]" id="processSection">
+              <div class="pt-10">
+                <div>
+                  <h3 class="text-white font-bold text-4xl text-left drop-shadow-[0_0px_10px_#FFFFFF] mx-10">Der Weg zu Ihrer neuen Website</h3>
+                </div>
+                <div class="mx-10 flex flex-col gap-y-32 mt-10 relative" id="timelineContainer">
+                  <div>
+                    <div class="flex items-center">
+                      <div class="w-[25px] h-[25px] rounded-full bg-white z-20">
+                        <!-- Punkt 1-->
+                      </div>
+                      <div>
+                        <p class="text-5xl text-white ml-8 font-bold">01</p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="ml-14 text-white">Text1</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-center">
+                      <div class="w-[25px] h-[25px] rounded-full bg-white z-20">
+                        <!-- Punkt 2-->
+                      </div>
+                      <div>
+                        <p class="text-5xl text-white ml-8 font-bold">02</p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="ml-14 text-white">Tex21</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-center">
+                      <div class="w-[25px] h-[25px] rounded-full bg-white z-20">
+                        <!-- Punkt 3-->
+                      </div>
+                      <div>
+                        <p class="text-5xl text-white ml-8 font-bold">03</p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="ml-14 text-white">Text3</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-center">
+                      <div class="w-[25px] h-[25px] rounded-full bg-white z-20">
+                        <!-- Punkt 4-->
+                      </div>
+                      <div>
+                        <p class="text-5xl text-white ml-8 font-bold">04</p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="ml-14 text-white">Text4</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-center">
+                      <div class="w-[25px] h-[25px] rounded-full bg-white z-20">
+                        <!-- Punkt 5-->
+                      </div>
+                      <div>
+                        <p class="text-5xl text-white ml-8 font-bold">05</p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="ml-14 text-white">Text5</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-center">
+                      <div class="w-[25px] h-[25px] rounded-full bg-white z-20">
+                        <!-- Punkt 6-->
+                      </div>
+                      <div>
+                        <p class="text-5xl text-white ml-8 font-bold">06</p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="ml-14 text-white">Text6</p>
+                    </div>
+                  </div>
+                  <div id="timelineBar" class="ml-3 bg-white flex w-1 absolute inset-y-0 z-10 drop-shadow-[0_0px_5px_#FFFFFF] mt-3"></div>
+                </div>
+              </div>
+            </section>
+            <section class="bg-gradient-to-b from-[#17012C] to-[#6A00D3]" id="contactSection">
+              <div class="pt-10">
+                <div>
+                  <h3 class="text-white font-bold text-4xl text-center drop-shadow-[0_0px_20px_#FFFFFF] mx-10">So kannst du uns erreichen</h3>
+                </div>
+                <div class="mx-10 flex flex-col gap-y-20 mt-10 pb-10" id="contactContainer">
+                  <div class="mx-8 md:mx-24 2xl:mx-[20vw] mt-4 lg:grid lg:grid-cols-2 lg:gap-x-14 lg:gap-y-16 animate__animated fadeInAni text-white" id="form">
+                    <div>
+                        <div class="relative z-0">
+                          <input type="text" id="floating_standard" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple-400 peer" placeholder=" " required/>
+                          <label for="floating_standard" class="absolute text-md text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-purple-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">* Name</label>
+                        </div>
+                        <div class="relative z-0 mt-6">
+                          <input type="text" id="floating_standard" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple-400 peer" placeholder=" " />
+                          <label for="floating_standard" class="absolute text-md text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-purple-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Telefonnummer</label>
+                        </div>
+                        <div class="relative z-0 mt-6">
+                          <input type="text" id="floating_standard" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple-400 peer" placeholder=" " required/>
+                          <label for="floating_standard" class="absolute text-md text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-purple-400 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">* E-Mail</label>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                      <label for="message" class="block mb-2 text-md font-mediumtext-white">* Ihre Nachricht</label>
+                      <textarea id="message" rows="4" cols="4" class="block p-2.5 w-full text-sm text-white bg-purple-950 rounded-lg border border-gray-300 focus:ring-purple-400 focus:border-purple-400" placeholder="Guten Tag! Ich hätte gerne eine unverbindliche Offerte für mein Unternehmen..."></textarea>
+                      <button class="bg-violet-700 h-[12vw] md:h-[9vw] lg:h-[6vw] 2xl:h-[7vh] px-5 text-white rounded-xl font-semibold drop-shadow-lg mt-6 lg:mt-6 lg:px-8 whitespace-pre md:text-lg" id="submitbtn">Jetzt senden!</button>
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </main>
+        <footer class="flex flex-col bg-violet-800 text-white px-4 pb-3 py-8 md:px-24 lg:py-12 lg:pb-8 overflow-x-hidden">
+          <div>
+              <h2 class="text-2xl md:text-3xl font-extrabold">Winistörfer Webdesign</h2>
+              <p class="text-sm md:text-md">Massgeschneiderte Weblösungen <br>für Ihre Bedürfnisse.</p>
+          </div>
+          <div class="mt-4 md:text-lg font-semibold">
+              <a href="#references"><p>Referenzen</p></a>
+              <a href="#services"><p>Services</p></a>
+              <a href="#about"><p>Über uns</p></a>
+              <a href="#contact"><p>Kontakt</p></a>
+              <a href="./impressum.html"><p>Impressum</p></a>
+          </div>
+          <div class="mt-4">
+              <p>Justin Winistörfer</p>
+              <p><a href="mailto:info@winistoerfer-webdesign.ch">info@winistoerfer-webdesign.ch</a></p>
+              <p><a href="tel:+41766817563">+41 (0)76 681 75 63</a></p>
+              <p><b>Sitz in Solothurn</b></p>
+          </div>
+          <div class="items-center justify-center text-center text-xs md:text-md mt-8 md:mt-10">
+              <p>&lt;end&gt;Coded with love&lt;/end&gt;</p>
+              <p>&#169; Winistörfer Webdesign 2023</p>
+          </div>
+        </footer>
+        <script src="./public/scripts/navigation.js"></script>
+        <script src="./public/scripts/gsap.js" type="module" defer></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js" type="module"></script>
+        </div>
+        </div>
+    </body>
+</html>
